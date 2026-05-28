@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+nav {
+    background-color: blueviolet;
+    padding: 1em;
+    
+}
+
+.nave {
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    gap: 4em;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.divisaologo {
+    display: flex;
+    margin: 0;
+    position: absolute; 
+    left: 1rem;
+}
+
+.logo {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+.hiscrita {
+    transition: 0.6s;
+}
+
+.hiscrita:hover {
+    background-color: rgb(186, 147, 221);
+    padding: 0.5rem;
+    border-radius: 2rem;
+    text-decoration: underline;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.container {
+    
+    margin-top: 6rem;
+    display: flex;
+    width: 100%;
+
+
+    
+}
+
+.imgProduto {
+    margin-left: 2rem;
+    border-radius: 2rem;
+  
+}
+
+.escrita {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    
+
+    
+    
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.aga {
+   text-align: center;
+   font-family: 'Times New Roman', Times, serif;
+   margin-top: 1.5rem;
+   color: rgb(128, 126, 126);
+
+}
+
+
+input {
+    border-radius: 2rem;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    
+
+}
+
+.addCar {
+    margin-top: 5rem;
+    background-color: chartreuse;
+    border-radius: 2rem;
+    
+    width: 17rem;
+    height: 3.2rem;
+    cursor: pointer;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.4s;
+   
+}
+
+.addCar:hover {
+    background-color: rgb(104, 187, 21);
+    transition: 0.6s;
+}
+
+
+#modal {
+    
+    display: none;
+    background-color: rgba(0, 0, 0, 0.432);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+   
+    justify-content: center;
+    align-items: center;
+    left: 0;
+}
+
+.box {
+    background-color: aliceblue;
+    width: 20rem;
+    height: 15rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    text-align: center;
+    
+}
+
+h3 {
+    color: rgb(103, 185, 20);
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.fullbox {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.goCar {
+    background-color: rgb(176, 92, 209);
+    width: 13rem;
+    height: 3.2rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: none;
+    color: aliceblue;
+    transition: 0.4s;
+    cursor: pointer;
+    
+
+  
+    
+}
+
+.goCar:hover {
+    transition: 0.4s;
+    background-color: rgb(129, 54, 199);
+    width: 14rem;
+
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}

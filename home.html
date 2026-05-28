@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Site de Algo</title>
+</head>
+<body>
+    <nav>
+        <div class="nave">
+            <div class="divisaologo">
+            <img src="Captura de tela 2026-05-14 083002.png" alt="" class="logo">
+            </div>
+
+            <h3 class="hiscrita">Menu</h3>
+            <h3 class="hiscrita">Sobre nós</h3>
+            <h3 class="hiscrita">Produtos</h3>
+            <h3 class="hiscrita">Contato</h3>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+            <img src="Captura de tela 2026-05-14 083002.png" alt="" class="imgProduto">
+
+            <div class="escrita">
+                <h1>NOME DO PRODUTO</h1>
+                <h3 class="aga">Marmelada de banana goiabada de nao sei o que sitio do picapau amarelo, goiabada de banana air max tn tenho coleção os d é os d an os d é os dfsdf sfsdfsdf sdfsdf sdf sd fsdfsdfsf sfd sdfsdf sdsfsf sd sdf sd sdfsdf </h3>
+
+
+                <h3 class="aga" style="color: black;">Quantidade</h3>
+                <input type="number">
+
+               
+
+
+                <!-- Criar button adicionar ao carrinho -->
+                  <button class="addCar" 
+                  onclick="addCar()">
+                  Adicionar ao Carrinho
+                </button>
+                <div id="modal">
+                    <div class="box">
+                        <h3>Adicionado ao carrinho com sucesso</h3>
+                        <div class="fullbox">
+                            
+                            <a href="carrinho.html">  
+                        <button class="goCar">Ir para o carrinho
+                            </a>
+                        </button>
+
+                            
+                        <button id="modalClose" onclick="closeModal()" class="goCar">Continuar comprando</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            
+        
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
