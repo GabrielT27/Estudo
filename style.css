@@ -69,6 +69,7 @@ nav {
     flex-direction: column;
     flex: 1;
     align-items: center;
+    padding: 5rem;
     
 
     
@@ -84,9 +85,48 @@ h1 {
 .aga {
    text-align: center;
    font-family: 'Times New Roman', Times, serif;
-   margin-top: 1.5rem;
+   margin-bottom: 2rem;
    color: rgb(128, 126, 126);
 
+}
+
+.inputin {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  
+    
+    
+    
+
+}
+
+.mais {
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;    
+    font-weight: bold;
+    font-size: 2rem;
+    color: rgb(102, 184, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.menos {
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: rgb(102, 184, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -95,12 +135,25 @@ input {
     width: 2rem;
     height: 2rem;
     text-align: center;
-    
 
 }
 
+
+/* TIRAR SETAS Chrome, Edge, Safari */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* TIRAR SETAS Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+
 .addCar {
-    margin-top: 5rem;
+    margin-top: 3rem;
     background-color: chartreuse;
     border-radius: 2rem;
     
