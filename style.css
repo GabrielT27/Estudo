@@ -97,6 +97,7 @@ h1 {
     align-items: center;
     text-align: center;
     margin: 0;
+    
   
     
     
@@ -114,6 +115,9 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    border-color: rgb(213, 168, 255);
+    border-style: solid;
     
 }
 
@@ -127,6 +131,10 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-style: hidden;
+    cursor: pointer;
+    border-color: rgb(206, 154, 255);
+    border-style: solid;
 }
 
 
@@ -135,6 +143,7 @@ input {
     width: 2rem;
     height: 2rem;
     text-align: center;
+    
 
 }
 
@@ -165,6 +174,9 @@ input[type="number"] {
     font-weight: bold;
     font-size: 1.2rem;
     transition: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
    
 }
 
