@@ -36,3 +36,15 @@ function subQtd () {
     input.value = valor
 }
 
+function testValor () {
+    
+    let input = document.getElementById('qtd')
+    let valor = Number(input.value)
+    let preco = 30.50 * valor
+    
+    localStorage.setItem("qtd", valor)
+    localStorage.setItem("preco", preco)
+
+    alert("Quantidade: " + valor + " |  Preço a ser pago: R$ " + preco)
+}
+
