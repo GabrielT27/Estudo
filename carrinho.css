@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: rgb(229, 143, 255);
+    width: 50rem;
+    height: 20rem;
+    padding: 2rem;
+    border-radius: 3rem;
+    text-align: center;
+}
+
+.imgPepa {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 1rem;
+}
+
+.imagin {
+    display: flex;
+}
+
+.hiscrita {
+    margin-left: 1rem;
+}
+
+.aga1 {
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.pe {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.aga3 {
+    
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font: bold;
+}
