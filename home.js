@@ -50,6 +50,8 @@ function irCarrinho() {
     
 
     window.location.href = "carrinho.html"
+
+    
     
 }
 
