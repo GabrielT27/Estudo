@@ -36,15 +36,15 @@ function subQtd () {
     input.value = valor
 }
 
-function irCarrinho() {
+function irCarrinho(nome, preco, imgProduto) {
 
     let input = document.getElementById("qtd")
     let qtd = Number(input.value)
-    let preco = 25.50 * qtd
-    let imgProduto = "pepa.jpg"
+    let precoTotal = qtd * preco
 
+    localStorage.setItem("nome", nome)
     localStorage.setItem("qtd", qtd)
-    localStorage.setItem("preco", preco)
+    localStorage.setItem("precoTotal", precoTotal)
     localStorage.setItem("imgProduto", imgProduto)
 
     
