@@ -5,7 +5,7 @@ function addCar () {
 }
 
 function closeModal () {
-    const modalClose = document.getElementById('modalClose')
+    const modalClose = document.getElementById('modal')
     modal.style.display = "none"
 }
 
@@ -44,7 +44,7 @@ function irCarrinho(nome, preco, imgProduto) {
 
     localStorage.setItem("nome", nome)
     localStorage.setItem("qtd", qtd)
-    localStorage.setItem("precoTotal", precoTotal)
+    localStorage.setItem("preco", precoTotal)
     localStorage.setItem("imgProduto", imgProduto)
 
     
