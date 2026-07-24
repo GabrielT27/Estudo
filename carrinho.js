@@ -10,10 +10,10 @@ function carrinho () {
 
 
 
-    document.getElementById("nomeProduto").innerText = "Nome: " + nomeProduto
-    document.getElementById("imgProduto").src = imgProduto
-    document.getElementById("qtd").innerText = "Quantidade: " + qtd
-    document.getElementById("preco").innerText = "Preço: R$ " + preco
+    document.querySelector(".nomeProduto").innerText = "Nome: " + nomeProduto
+    document.querySelector(".imgProduto").src = imgProduto
+    document.querySelector(".qtd").innerText = "Quantidade: " + qtd
+    document.querySelector(".preco").innerText = "Preço: R$ " + preco
 
 }
 

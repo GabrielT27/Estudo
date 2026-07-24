@@ -1,7 +1,7 @@
-function addCar () {
+function addCar (botao) {
     const modais = document.querySelectorAll('.modal')
      modais.forEach(modal => {
-        modal.style.display = "flex"
+        modal.style.display = "none"
     })
     
 }
@@ -55,7 +55,7 @@ function irCarrinho(botao, nomeProduto, preco, imgProduto) {
 // closest() = encontra o produto daquele botão.
 // querySelector(".qtd") = encontra a quantidade daquele produto.
     
-    let produto = botao.closest(".produto2")
+    let produto = botao.closest(".produto")
     let input = produto.querySelector(".qtd")
     let qtd = Number(input.value)
     let precoTotal = qtd * preco

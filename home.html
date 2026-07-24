@@ -7,10 +7,11 @@
     <title>Site de Algo</title>
 </head>
 <body>
+
     <nav>
         <div class="nave">
             <div class="divisaologo">
-            <img src="shockBrasil.jpg" alt="" class="logo">
+                <img src="shockBrasil.jpg" alt="" class="logo">
             </div>
 
             <h3 class="hiscrita" style="color: aliceblue;">Menu</h3>
@@ -20,172 +21,163 @@
         </div>
     </nav>
 
+    <!-- PRODUTO 1 -->
     <div class="produto">
-        
-            <img src="pepa.jpg" alt="" class="imgProduto imgProduto">
 
-            <div class="escrita">
-                <h1>Passarinho Trinca Ferro</h1>
-                <h3 class="aga">Marmelada de banana goiabada de nao sei o que sitio do picapau amarelo, goiabada de banana air max tn tenho coleção os d é os d an os d é os dfsdf sfsdfsdf sdfsdf sdf sd fsdfsdfsf sfd sdfsdf sdsfsf sd sdf sd sdfsdf </h3>
+        <img src="pepa.jpg" alt="" class="imgProduto">
 
-
-                <h3 class="aga" style="color: black;">Quantidade</h3>
-                <div class="inputin">
-                     <button onclick="subQtd(this)"
-                     class="subQtd menos"
-                     >
-                    -
-                </button>
-
-                <input class="qtd" 
-                type="number">
-
-               
-                <button onclick="addQtd(this)" 
-                    class="addQtd mais" 
-                    >
-                        +
-                    </button>
-                
-                </div>
-
-              
-               
-
-
-                  <button class="addCar" 
-                  onclick="addCar(this)">
-                  Adicionar ao Carrinho <img src="icons8-carrinho-48.png" alt="" style="width: 1.6rem;">
-                </button>
-                <div class="modal">
-                    <div class="box">
-                        <div class="closeCima">
-                            <div class="insideX">
-                        <button class="xis"
-                         style="border: none; cursor: pointer;"
-                         onclick="closeModal()"
-                         >x</button>
-                        </div>
-                        <h3>Adicionado ao carrinho com sucesso</h3>
-                        </div>
-                        <div class="fullbox">
-                            
-                            
-                             
-                        <button class="goCar" onclick="irCarrinho(this, 'Passarinho Trinca Ferro', 25.50, 'pepa.jpg')"> Ir para o carrinho
-                        </button>
-
-                            
-                        <button class="modalClose goCar" onclick="closeModal()" >Continuar comprando</button>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="destaque">
-                    <h3>Qualidade chinesa</h3>
-                    <h3>Segurança segura</h3>
-                    <h3>Envio instantaneo</h3>
-                </div>
-                
-
-
-
-
-                
-            </div>
-       
-
-            
-
-            
-        
-    </div>
-
-    <div class="produto">
-        
-        <img src="pingui,.jpg" alt="" class="imgProduto">
         <div class="escrita">
-                <h1>Pinguins trinca ferro</h1>
-                <h3 class="aga">Pinguins trinca ferros andadores e escaladores de monte </h3>
 
+            <h1>Passarinho Trinca Ferro</h1>
 
-                <h3 class="aga" style="color: black;">Quantidade</h3>
-                <div class="inputin">
-                     <button onclick="subQtd(this)"
-                     class="subQtd menos">
+            <h3 class="aga">
+                Marmelada de banana goiabada de nao sei o que sitio do picapau amarelo.
+            </h3>
+
+            <h3 class="aga" style="color: black;">Quantidade</h3>
+
+            <div class="inputin">
+
+                <button onclick="subQtd(this)" class="subQtd menos">
                     -
                 </button>
 
-                <input class="qtd" 
-                type="number">
+                <input class="qtd" type="number">
 
-               
-                <button onclick="addQtd(this)" 
-                    class="addQtd mais" 
-                    >
-                        +
-                    </button>
-                
-                </div>
-
-              
-               
-
-
-                  <button class="addCar" 
-                  onclick="addCar(this)">
-                  Adicionar ao Carrinho <img src="icons8-carrinho-48.png" alt="" style="width: 1.6rem;">
+                <button onclick="addQtd(this)" class="addQtd mais">
+                    +
                 </button>
-                <div class="modal">
-                    <div class="box">
-                        <div class="closeCima">
-                            <div class="insideX">
-                        <button class="xis"
-                         style="border: none; cursor: pointer;"
-                         onclick="closeModal()"
-                         >x</button>
+
+            </div>
+
+            <button class="addCar" onclick="addCar(this)">
+                Adicionar ao Carrinho
+                <img src="icons8-carrinho-48.png" alt="" style="width: 1.6rem;">
+            </button>
+
+            <div class="modais">
+                <div class="box">
+
+                    <div class="closeCima">
+
+                        <div class="insideX">
+                            <button class="xis"
+                                style="border: none; cursor: pointer;"
+                                onclick="closeModal()">
+                                x
+                            </button>
                         </div>
+
                         <h3>Adicionado ao carrinho com sucesso</h3>
-                        </div>
-                        <div class="fullbox">
-                            
-                            
-                             
-                        <button class="goCar" onclick="irCarrinho(this, 'Pinguim Trinca Ferro', 55.50, 'pingui,.jpg')"> Ir para o carrinho
+
+                    </div>
+
+                    <div class="fullbox">
+
+                        <button class="goCar"
+                            onclick="irCarrinho(this, 'Passarinho Trinca Ferro', 25.50, 'pepa.jpg')">
+                            Ir para o carrinho
                         </button>
 
-                            
-                        <button class="modalClose" onclick="closeModal()" class="goCar">Continuar comprando</button>
+                        <button class="modalClose goCar"
+                            onclick="closeModal()">
+                            Continuar comprando
+                        </button>
 
-                        </div>
                     </div>
+
                 </div>
-                <div class="destaque">
-                    <h3>Qualidade chinesa</h3>
-                    <h3>Segurança segura</h3>
-                    <h3>Envio instantaneo</h3>
-                </div>
-                
-
-
-
-
-                
             </div>
-       
 
-            
+            <div class="destaque">
+                <h3>Qualidade chinesa</h3>
+                <h3>Segurança segura</h3>
+                <h3>Envio instantaneo</h3>
+            </div>
 
-            
-        
+        </div>
+
     </div>
 
+    <!-- PRODUTO 2 -->
+    <div class="produto">
+
+        <img src="pingui,.jpg" alt="" class="imgProduto">
+
+        <div class="escrita">
+
+            <h1>Pinguins Trinca Ferro</h1>
+
+            <h3 class="aga">
+                Pinguins trinca ferros andadores e escaladores de monte
+            </h3>
+
+            <h3 class="aga" style="color: black;">Quantidade</h3>
+
+            <div class="inputin">
+
+                <button onclick="subQtd(this)" class="subQtd menos">
+                    -
+                </button>
+
+                <input class="qtd" type="number">
+
+                <button onclick="addQtd(this)" class="addQtd mais">
+                    +
+                </button>
+
+            </div>
+
+            <button class="addCar" onclick="addCar(this)">
+                Adicionar ao Carrinho
+                <img src="icons8-carrinho-48.png" alt="" style="width: 1.6rem;">
+            </button>
+
+            <div class="modais">
+                <div class="box">
+
+                    <div class="closeCima">
+
+                        <div class="insideX">
+                            <button class="xis"
+                                style="border: none; cursor: pointer;"
+                                onclick="closeModal()">
+                                x
+                            </button>
+                        </div>
+
+                        <h3>Adicionado ao carrinho com sucesso</h3>
+
+                    </div>
+
+                    <div class="fullbox">
+
+                        <button class="goCar"
+                            onclick="irCarrinho(this, 'Pinguim Trinca Ferro', 55.50, 'pingui,.jpg')">
+                            Ir para o carrinho
+                        </button>
+
+                        <button class="modalClose goCar"
+                            onclick="closeModal()">
+                            Continuar comprando
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="destaque">
+                <h3>Qualidade chinesa</h3>
+                <h3>Segurança segura</h3>
+                <h3>Envio instantaneo</h3>
+            </div>
+
+        </div>
+
     </div>
-
-
-
-
 
     <script src="home.js"></script>
+
 </body>
 </html>
