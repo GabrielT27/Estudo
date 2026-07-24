@@ -1,31 +1,43 @@
 function addCar () {
-    const modal = document.getElementById('modal')
-    modal.style.display = "flex"
+    const modais = document.querySelectorAll('.modal')
+     modais.forEach(modal => {
+        modal.style.display = "flex"
+    })
     
 }
 
-function closeModal () {
-    const modalClose = document.getElementById('modal')
-    modal.style.display = "none"
+   function closeModal () {
+    const modais = document.querySelectorAll('.modal')
+
+    modais.forEach(modal => {
+        modal.style.display = "none"
+    })
 }
 
-function addQtd () {
+function addQtd(botao) {
 
-    let input = document.getElementById('qtd')
-    let valor = Number(input.value) // Transforma o valor do input em numero
+    // pega a div pai
+    let container = botao.parentElement
 
-    valor = valor + 1  // Transforma o valor do imput em +1 após executar a função
+    // procura o input dentro dela
+    let input = container.querySelector('.qtd')
 
-    input.value = valor // Joga no input
-
-   
-}
-
-function subQtd () {
-    let input = document.getElementById('qtd')
+    // lê o valor
     let valor = Number(input.value)
 
-    valor = valor - 1
+    // soma 1
+    valor++
+
+    // coloca de volta
+    input.value = valor
+}
+
+
+function subQtd (botao) {
+    let input = botao.parentElement.querySelector('.qtd')
+    let valor = Number(input.value)
+
+    valor--
 
     
 
@@ -36,13 +48,19 @@ function subQtd () {
     input.value = valor
 }
 
-function irCarrinho(nome, preco, imgProduto) {
+function irCarrinho(botao, nomeProduto, preco, imgProduto) {
 
-    let input = document.getElementById("qtd")
+
+//     botao = qual botão foi clicado.
+// closest() = encontra o produto daquele botão.
+// querySelector(".qtd") = encontra a quantidade daquele produto.
+    
+    let produto = botao.closest(".produto2")
+    let input = produto.querySelector(".qtd")
     let qtd = Number(input.value)
     let precoTotal = qtd * preco
 
-    localStorage.setItem("nome", nome)
+    localStorage.setItem("nomeProduto", nomeProduto)
     localStorage.setItem("qtd", qtd)
     localStorage.setItem("preco", precoTotal)
     localStorage.setItem("imgProduto", imgProduto)
