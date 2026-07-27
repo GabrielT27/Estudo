@@ -1,17 +1,15 @@
-function addCar (botao) {
-    const modais = document.querySelectorAll('.modal')
-     modais.forEach(modal => {
-        modal.style.display = "none"
-    })
-    
+function addCar(botao) {
+    let produto = botao.closest(".produto")
+    let modal = produto.querySelector(".modais")
+
+    modal.style.display = "flex"
 }
 
-   function closeModal () {
-    const modais = document.querySelectorAll('.modal')
+   function closeModal (botao) {
+    let produto = botao.closest(".produto")
+    let modal = produto.querySelector(".modais")
 
-    modais.forEach(modal => {
-        modal.style.display = "none"
-    })
+    modal.style.display = "none"
 }
 
 function addQtd(botao) {

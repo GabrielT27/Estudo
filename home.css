@@ -53,6 +53,8 @@ nav {
     margin-top: 6rem;
     display: flex;
     width: 100%;
+    justify-content: center;
+    align-items: center;
 
 
     
@@ -61,7 +63,7 @@ nav {
 .imgProduto {
     margin-left: 2rem;
     border-radius: 2rem;
-    width: clamp(35rem, 35vw, 40rem);
+    width: clamp(40rem, 5vw, 50rem);
     height: auto;
 }
 
@@ -187,7 +189,7 @@ input[type="number"] {
 }
 
 
-#modal {
+.modais {
     
     display: none;
     background-color: rgba(0, 0, 0, 0.632);
