@@ -72,9 +72,9 @@ function irCarrinho(botao, nomeProduto, preco, imgProduto) {
 }
 
 let addAcar = JSON.parse( // transforma o texto JSON novamente em array
-    localStorage.getItem ("carrinho") // Busca os produtos salvos no Local Storage
+    localStorage.getItem ("carrinho")) // Busca os produtos salvos no Local Storage
      || [] // Se não existir carrinho salvo, cria um array vazio
-) 
+
 
 
 function adicionarCarrinho (botao, nomeProduto, preco, imgProduto) {

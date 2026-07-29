@@ -1,9 +1,7 @@
 
 window.onload = carrinho 
 
-function carrinho() {
-
-    let produtos = JSON.parse(
+let produtos = JSON.parse(
 
         // transforma o JSON em array novamente
         // Busca os dados salvos na chave "carrinho" na home.js
@@ -13,8 +11,9 @@ function carrinho() {
 
     console.log(produtos)
 
+function carrinho() {
 
-
+    
 
 let listaProdutos = document.querySelector(".listaProdutos")  // Cria uma variável que guarda a referência da div com a classe "listaProdutos" para que ela possa ser manipulada pelo JavaScript
 
@@ -29,16 +28,21 @@ produtos.forEach (produto => {   // ARROW FUNCTION para cada produto dentro do a
     <div class="hiscrita">
 
         <p class="nomeProduto pe">
-            ${produto.nome}
+            Nome: ${produto.nome}
         </p>
 
         <p class="qtd pe">
-            ${produto.quantidade}
+            Quantidade: ${produto.quantidade}
         </p>
 
         <p class="preco pe">
-            ${produto.preco}
+            Preço: ${produto.preco}
         </p>
+
+        <button onclick="limparProduto(this, 
+            '${produto.nome}')">
+                Remover Item
+            </button>
 
 
     </div>
@@ -48,4 +52,32 @@ produtos.forEach (produto => {   // ARROW FUNCTION para cada produto dentro do a
 
 })
 }
+
+ 
+function limparCarrinho () {
+    localStorage.removeItem("carrinho")
+    window.location.reload()
+}
+
+function limparProduto(botao, nomeProduto) {
+        
+    let novoCarrinho = produtos.filter( produto => {
+        return produto.nome !== nomeProduto
+    })
+
+    localStorage.setItem (
+        "carrinho",
+        JSON.stringify(novoCarrinho)
+    )
+
+    console.log("CLICOU")
+    console.log(novoCarrinho)
+
+    window.location.reload()
+
+    
+}
+
+// ALTERAR FORMA DE REMOVEITEM, ESTA FILTRANDO APENAS PELO NOME E TIRANDO TODOS DE UM VEZ, REALIZAR TESTE PARA VER E LEMBRAR
+
 
