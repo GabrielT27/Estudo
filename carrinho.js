@@ -44,6 +44,8 @@ produtos.forEach (produto => {   // ARROW FUNCTION para cada produto dentro do a
                 Remover Item
             </button>
 
+            
+
 
     </div>
     </div>
