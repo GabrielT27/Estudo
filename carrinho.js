@@ -22,8 +22,11 @@ produtos.forEach (produto => {   // ARROW FUNCTION para cada produto dentro do a
     ` 
     <div class="imagin">  
     
+    <div class="fundoPro">
 
-    <img src="${produto.imgProduto}">
+    <img src="${produto.imgProduto}" class="fotoPro">
+
+    
 
     <div class="hiscrita">
 
@@ -40,9 +43,11 @@ produtos.forEach (produto => {   // ARROW FUNCTION para cada produto dentro do a
         </p>
 
         <button onclick="limparProduto(this, 
-            '${produto.nome}')">
+            '${produto.nome}') " class="removerItem">
                 Remover Item
             </button>
+
+            </div>
 
             
 

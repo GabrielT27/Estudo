@@ -89,7 +89,7 @@ function adicionarCarrinho(botao, nomeProduto, preco, imgProduto) {
     let existe = addAcar.find(produto => {
         return produto.nome === nomeProduto
 
-
+        
     })
     if (existe) {
         existe.quantidade += qtd
