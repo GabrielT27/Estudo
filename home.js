@@ -56,12 +56,13 @@ function irCarrinho(botao, nomeProduto, preco, imgProduto) {
     let produto = botao.closest(".produto")
     let input = produto.querySelector(".qtd")
     let qtd = Number(input.value)
-    let precoTotal = qtd * preco
+    
 
     localStorage.setItem("nomeProduto", nomeProduto)
     localStorage.setItem("qtd", qtd)
-    localStorage.setItem("preco", precoTotal)
+    localStorage.setItem("preco", preco)
     localStorage.setItem("imgProduto", imgProduto)
+   
 
 
 
@@ -79,6 +80,7 @@ function adicionarCarrinho(botao, nomeProduto, preco, imgProduto) {
     let input = produto.querySelector(".qtd") // acha o input dentro da div acima com querySelector 
 
     let qtd = Number(input.value) // pega a quantidade (valor do input)
+    
 
 
     let addAcar = JSON.parse( // transforma o texto JSON novamente em array
@@ -93,6 +95,7 @@ function adicionarCarrinho(botao, nomeProduto, preco, imgProduto) {
     })
     if (existe) {
         existe.quantidade += qtd
+        
     }
 
     else {

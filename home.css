@@ -7,7 +7,7 @@ body {
 }
 
 nav {
-    background-color: blueviolet;
+    background-color: rgb(95, 95, 95);
     width: 100%;
     padding: 2.2em;
     
@@ -41,7 +41,7 @@ nav {
 }
 
 .hiscrita:hover {
-    background-color: rgb(186, 147, 221);
+    background-color: rgb(164, 163, 165);
     padding: 0.5rem;
     border-radius: 2rem;
     text-decoration: underline;
@@ -115,12 +115,12 @@ h1 {
     width: 2rem;    
     font-weight: bold;
     font-size: 2rem;
-    color: rgb(102, 184, 255);
+    color: rgb(20, 20, 20);
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    border-color: rgb(213, 168, 255);
+    border-color: rgb(122, 122, 122);
     border-style: solid;
     
 }
@@ -131,13 +131,13 @@ h1 {
     width: 2rem;
     font-weight: bold;
     font-size: 1.5rem;
-    color: rgb(102, 184, 255);
+    color: rgb(20, 20, 20);
     display: flex;
     align-items: center;
     justify-content: center;
     border-style: hidden;
     cursor: pointer;
-    border-color: rgb(206, 154, 255);
+    border-color: rgb(122, 122, 122);
     border-style: solid;
 }
 
@@ -147,7 +147,8 @@ input {
     width: 2rem;
     height: 2rem;
     text-align: center;
-    
+    border-color: black;
+    border-style: solid;
 
 }
 

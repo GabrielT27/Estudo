@@ -39,7 +39,11 @@ produtos.forEach (produto => {   // ARROW FUNCTION para cada produto dentro do a
         </p>
 
         <p class="preco pe">
-            Preço: ${produto.preco}
+            Preço Unitário: ${produto.preco} R$
+        </p>
+
+        <p class= "preco pe">
+            Preço Total: ${(produto.quantidade * produto.preco)} R$
         </p>
 
         <button onclick="limparProduto(this, 
