@@ -19,6 +19,10 @@ let listaProdutos = document.querySelector(".listaProdutos")  // Cria uma variá
 
 produtos.forEach (produto => {   // ARROW FUNCTION para cada produto dentro do array produtos
     listaProdutos.innerHTML +=  // Adiciona um novo bloco de HTML dentro da div listaProdutos
+
+
+
+
     ` 
     <div class="imagin">  
     
@@ -34,9 +38,25 @@ produtos.forEach (produto => {   // ARROW FUNCTION para cada produto dentro do a
             Nome: ${produto.nome}
         </p>
 
-        <p class="qtd pe">
-            Quantidade: ${produto.quantidade}
-        </p>
+            <div class="inputin">
+            <p class="preco pe">
+                Quantidade: 
+            </p>
+
+                    <button onclick="subQtd(this)" class="subQtd menos" >
+                        -
+                    </button>
+
+                    <input class="qtd" 
+                    type="number" 
+                    value="${produto.quantidade}"
+                    onchange="atualizarQuantidade('${produto.nome}', this)">
+
+                    <button onclick="addQtd(this)" class="addQtd mais">
+                        +
+                    </button>
+
+                </div>
 
         <p class="preco pe">
             Preço Unitário: ${produto.preco} R$
@@ -64,6 +84,67 @@ produtos.forEach (produto => {   // ARROW FUNCTION para cada produto dentro do a
 })
 }
 
+
+
+
+
+function addQtd(botao) {
+    let input = botao.parentElement.querySelector(".qtd");
+
+    input.value = Number(input.value) + 1;
+
+    input.dispatchEvent(new Event("change"));
+}
+
+function subQtd(botao) {
+    let input = botao.parentElement.querySelector(".qtd");
+
+    if (Number(input.value) > 1) {
+        input.value = Number(input.value) - 1;
+    }
+
+
+    input.dispatchEvent(new Event("change")); 
+    
+    // Garante que o onchange seja executado mesmo quando
+// o valor do input é alterado via JavaScript
+// "Javascript alterou o valor, mas quero que você se comporte como se o usuário tivesse alterado e faça o "change" do mesmo jeito ."
+}
+
+
+function atualizarQuantidade(nomeProduto, input) {
+
+    // Pega o valor digitado no input e transforma em número
+    let novaQuantidade = Number(input.value)
+
+    // Busca o carrinho salvo no Local Storage
+    // Se não existir, cria um array vazio
+    let carrinho = JSON.parse(localStorage.getItem("carrinho")) || []
+
+    // Procura no carrinho o produto que tem o mesmo nome
+    let produto = carrinho.find(produto => {
+        return produto.nome === nomeProduto
+    })
+
+    // Atualiza a quantidade do produto
+    produto.quantidade = novaQuantidade
+
+    // Recalcula o preço total do produto
+    // Preço unitário × quantidade
+    produto.precoTotal = produto.preco * novaQuantidade
+
+    // Salva o carrinho atualizado novamente no Local Storage
+    localStorage.setItem(
+        "carrinho",
+        JSON.stringify(carrinho)
+    )
+
+    // Recarrega a página para mostrar os novos valores
+    location.reload()
+}
+
+
+
  
 function limparCarrinho () {
     localStorage.removeItem("carrinho")
@@ -89,5 +170,6 @@ function limparProduto(botao, nomeProduto) {
     
 }
 
-// ALTERAR FORMA DE REMOVEITEM, ESTA FILTRANDO APENAS PELO NOME E TIRANDO TODOS DE UM VEZ, REALIZAR TESTE PARA VER E LEMBRAR
+
+
 
